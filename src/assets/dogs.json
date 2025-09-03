@@ -1,0 +1,50 @@
+[
+  {
+    "nom": "Rex",
+    "race": "Berger Allemand",
+    "poids_kg": 35,
+    "couleur": "Noir et feu"
+  },
+  {
+    "nom": "Bella",
+    "race": "Labrador",
+    "poids_kg": 28,
+    "couleur": "Chocolat"
+  },
+  {
+    "nom": "Max",
+    "race": "Golden Retriever",
+    "poids_kg": 30,
+    "couleur": "Dore"
+  },
+  {
+    "nom": "Luna",
+    "race": "Beagle",
+    "poids_kg": 12,
+    "couleur": "Tricolore"
+  },
+  {
+    "nom": "Rocky",
+    "race": "Boxer",
+    "poids_kg": 27,
+    "couleur": "Fauve"
+  },
+  {
+    "nom": "Maya",
+    "race": "Husky",
+    "poids_kg": 25,
+    "couleur": "Gris et blanc"
+  },
+  {
+    "nom": "Toby",
+    "race": "Cocker",
+    "poids_kg": 14,
+    "couleur": "Rouge"
+  },
+  {
+    "nom": "Nina",
+    "race": "Chihuahua",
+    "poids_kg": 3,
+    "couleur": "Creme"
+  }
+]
