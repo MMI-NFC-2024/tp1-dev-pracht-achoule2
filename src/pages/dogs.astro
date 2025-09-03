@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+import * as Plot from "@observablehq/plot";
+import Header from "../components/Header.astro";
+import PlotFigure from "../components/PlotFigure.astro";
+import dogs from "../assets/dogs.json";
+---
+
+<Header />
+
+<main>
+  <h1>Chiens</h1>
+  <PlotFigure
+    options={{
+      marks: [
+        Plot.dot(dogs, {
+          x: "poids_kg",
+          y: "race",
+          fill: "couleur",
+          r: 5
+        })
+      ],
+      width: 800,
+      height: 500,
+      x: { label: "Poids (kg)" },
+      y: { label: "Race" },
+      color: { legend: true, label: "Couleur du pelage" }
+    }}
+  />
+</main>
