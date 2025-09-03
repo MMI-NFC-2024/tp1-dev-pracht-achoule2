@@ -1,0 +1,68 @@
+---
+import * as Plot from "@observablehq/plot";
+
+
+import penguins from "../assets/penguins.json";
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Penguins Data</title>
+  </head>
+  <body>
+    <h1>Tableau des manchots</h1>
+
+    
+    <table border="1" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Espèce</th>
+          <th>Île</th>
+          <th>Culmen (mm)</th>
+          <th>Profondeur (mm)</th>
+          <th>Nageoire (mm)</th>
+          <th>Masse (g)</th>
+          <th>Sexe</th>
+        </tr>
+      </thead>
+      <tbody>
+        {penguins.map(p => (
+          <tr>
+            <td>{p.species}</td>
+            <td>{p.island}</td>
+            <td>{p.culmen_length_mm}</td>
+            <td>{p.culmen_depth_mm}</td>
+            <td>{p.flipper_length_mm}</td>
+            <td>{p.body_mass_g}</td>
+            <td>{p.sex}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>Visualisation avec Plot</h2>
+    <div id="chart"></div>
+
+    <script>
+      import * as Plot from "@observablehq/plot";
+      import penguins from "../assets/penguins.json";
+
+      const chart = Plot.plot({
+        marks: [
+          Plot.dot(penguins, {
+            x: "culmen_length_mm",
+            y: "culmen_depth_mm",
+            stroke: "species",
+            title: d => ${d.species} (${d.sex})
+          })
+        ],
+        x: { label: "Longueur du bec (mm)" },
+        y: { label: "Profondeur du bec (mm)" },
+        color: { legend: true }
+      });
+
+      document.getElementById("chart").append(chart);
+    </script>
+  </body>
+</html>
