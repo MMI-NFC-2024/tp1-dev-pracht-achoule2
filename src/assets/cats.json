@@ -1,0 +1,50 @@
+[
+  {
+    "nom": "Milo",
+    "race": "Siamois",
+    "poids_kg": 4.2,
+    "couleur": "Creme"
+  },
+  {
+    "nom": "Luna",
+    "race": "Maine Coon",
+    "poids_kg": 6.5,
+    "couleur": "Gris"
+  },
+  {
+    "nom": "Oscar",
+    "race": "British Shorthair",
+    "poids_kg": 5.1,
+    "couleur": "Bleu"
+  },
+  {
+    "nom": "Chloé",
+    "race": "Persan",
+    "poids_kg": 3.8,
+    "couleur": "Blanc"
+  },
+  {
+    "nom": "Simba",
+    "race": "Bengal",
+    "poids_kg": 4.7,
+    "couleur": "Dore"
+  },
+  {
+    "nom": "Nala",
+    "race": "Chartreux",
+    "poids_kg": 4.9,
+    "couleur": "Gris"
+  },
+  {
+    "nom": "Tigrou",
+    "race": "Europeen",
+    "poids_kg": 4.0,
+    "couleur": "Tigre"
+  },
+  {
+    "nom": "Bella",
+    "race": "Sphynx",
+    "poids_kg": 3.5,
+    "couleur": "Rose"
+  }
+]
