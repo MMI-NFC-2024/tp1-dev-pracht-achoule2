@@ -1,0 +1,23 @@
+---
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+import * as Plot from "@observablehq/plot";
+import PlotFigure from "../components/PlotFigure.astro";
+import penguins from "../assets/penguins.json";
+---
+<Header />
+
+<main>
+  <h1>Bienvenue sur le site des animaux</h1>
+  <p>Explorez les donnees des manchots et des chats</p>
+</main>
+<div class="plot-container">
+  <h1>Penguins</h1>
+  <PlotFigure
+    options={{
+      marks: [
+        Plot.dot(penguins, { x: "culmen_length_mm", y: "culmen_depth_mm" }),
+      ],
+    }}
+  />
+</div>
